@@ -55,6 +55,24 @@ algebraic relations to obtain H1(s) and H2(s). These expressions form the basis
 for the later system-level analysis.
 
 
+### Transfer Functions
+
+$[
+H_3(s) = \frac{-s^2}{s^2 + \frac{GR_2}{W R_3}s + \left(\frac{G}{W}\right)^2}
+\$
+
+$[
+H_2(s) = \frac{-Gs}{Ws^2 + \frac{R_2 G}{R_3}s + \frac{G^2}{W}}
+\$
+
+$[
+H_1(s) = \frac{-G^2}{W^2 s^2 + \frac{GW R_2}{R_3}s + G^2}
+\$
+
+
+
+
+
 ## Part 1.3 — MATLAB Visualization of the Transfer Functions
 
 To study the behavior of H1(s), H2(s), and H3(s), I created a parameterized MATLAB
@@ -67,6 +85,8 @@ script that:
 
 Changing any component updates all plots automatically, making it easy to explore
 how different designs affect stability and bandwidth.
+
+![Pole-zero](assets/img/fig1.fig)
 
 
 ## Part 1.5 — Filter Types
